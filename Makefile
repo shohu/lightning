@@ -1,5 +1,5 @@
 #! /usr/bin/make
-NAME=Bitcoin Savings & Trust Daily Interest II
+NAME=c0ban Savings & Trust Daily Interest II
 
 # TODO: Decide: c-lightning, lightningd, lightning?
 PKGNAME = c-lightning
@@ -354,8 +354,8 @@ installdirs:
 # TODO: $(EXEEXT) support for Windows?  Needs more coding for
 # the individual Makefiles, however.
 BIN_PROGRAMS = \
-	       cli/lightning-cli \
-	       lightningd/lightningd
+	       cli/c0ban-lightning-cli \
+	       lightningd/c0ban-lightningd
 PKGLIBEXEC_PROGRAMS = \
 	       lightningd/lightning_channeld \
 	       lightningd/lightning_closingd \

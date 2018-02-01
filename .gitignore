@@ -10,7 +10,10 @@ TAGS
 ccan/tools/configurator/configurator
 ccan/ccan/cdump/tools/cdump-enumstr
 gen_*
+cli/c0ban-lightning-cli
 cli/lightning-cli
+lightningd/c0ban-lightningd
+lightningd/lightningd
 tools/check-bolt
 coverage
 ccan/config.h
