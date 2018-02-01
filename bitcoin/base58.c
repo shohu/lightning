@@ -39,13 +39,13 @@ static char *to_base58(const tal_t *ctx, u8 version,
 char *bitcoin_to_base58(const tal_t *ctx, bool test_net,
 			const struct bitcoin_address *addr)
 {
-	return to_base58(ctx, test_net ? 111 : 0, &addr->addr);
+	return to_base58(ctx, test_net ? 111 : 18, &addr->addr);
 }
 
 char *p2sh_to_base58(const tal_t *ctx, bool test_net,
 		     const struct ripemd160 *p2sh)
 {
-	return to_base58(ctx, test_net ? 196 : 5, p2sh);
+	return to_base58(ctx, test_net ? 196 : 28, p2sh);
 }
 
 static bool from_base58(u8 *version,
