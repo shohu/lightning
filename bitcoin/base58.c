@@ -77,7 +77,7 @@ bool bitcoin_from_base58(bool *test_net,
 
 	if (version == 111)
 		*test_net = true;
-	else if (version == 0)
+	else if (version == 18)
 		*test_net = false;
 	else
 		return false;
@@ -95,7 +95,7 @@ bool p2sh_from_base58(bool *test_net,
 
 	if (version == 196)
 		*test_net = true;
-	else if (version == 5)
+	else if (version == 28)
 		*test_net = false;
 	else
 		return false;
